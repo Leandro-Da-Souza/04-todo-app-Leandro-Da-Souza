@@ -10,6 +10,8 @@
 <body>
     <div class="container">
         @include('inc.navbar')
+        @include('inc.hero')
+        @include('todo.create')
         @yield('content')
     </div>
     

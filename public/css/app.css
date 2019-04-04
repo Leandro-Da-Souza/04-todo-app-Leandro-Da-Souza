@@ -10656,8 +10656,7 @@ a.text-dark:focus {
 }
 
 .navbar {
-  border: 1px solid #000;
-  border-radius: 25px;
+  border: 1px solid whitesmoke;
 }
 
 .navbar-laravel {
