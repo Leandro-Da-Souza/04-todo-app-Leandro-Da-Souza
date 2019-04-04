@@ -36,7 +36,12 @@ class TodosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $todo = new Todo;
+        $todo->title = $request->input('title');
+        $todo->description = $request->input('description');
+        $todo->save();
+
+        return back();
     }
 
     /**

@@ -1,6 +1,7 @@
 <div class="card mb-4">
     <div class="card-body">
         <form method="POST" action="todo">
+            @csrf
             <div class="form-group">
                 <label for="title">Title:</label>
                 <input type="text" name="title" class="form-control">
