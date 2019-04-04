@@ -10655,6 +10655,11 @@ a.text-dark:focus {
   }
 }
 
+.navbar {
+  border: 1px solid #000;
+  border-radius: 25px;
+}
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
