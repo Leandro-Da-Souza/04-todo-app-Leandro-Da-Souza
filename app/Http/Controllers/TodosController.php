@@ -80,7 +80,11 @@ class TodosController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $todo = Todo::find($id);
+        $todo->title = $request->title;
+        $todo->description = $request->description;
+        $todo->save();
+        return back()->with('success', 'Todo Updated!');
     }
 
     /**
