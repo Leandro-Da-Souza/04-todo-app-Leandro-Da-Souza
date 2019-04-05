@@ -7,12 +7,16 @@
     <div class="col">
        <div class="card mb-3">
            <div class="card-body text-center">
-           <h5 class="card-title">{{$todo->title}}</h5>
-           <p class="card-text">{{$todo->description}}</p>
+           <h5 class="card-title montserrat">{{$todo->title}}</h5>
+           <hr>
+           <p class="card-text montserrat">{{$todo->description}}</p>
+           <hr>
            @if($todo->updated_at > $todo->created_at)
-           <p class="card-text">Updated At: {{$todo->updated_at}}</p>
+           <p class="card-text montserrat">Updated At: {{$todo->updated_at}}</p>
+           <hr class="mb-0">
            @else
-           <p class="card-text">Created At: {{$todo->created_at}}</p>
+           <p class="card-text montserrat">Created At: {{$todo->created_at}}</p>
+           <hr class="mb-0">
            @endif
            </div>
 
