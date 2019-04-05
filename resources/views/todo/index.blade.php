@@ -13,6 +13,7 @@
            <hr>
            @if($todo->updated_at > $todo->created_at)
            <p class="card-text montserrat">Updated At: {{$todo->updated_at}}</p>
+           <p class="card-text montserrat">Created At: {{$todo->created_at}}</p>
            <hr class="mb-0">
            @else
            <p class="card-text montserrat">Created At: {{$todo->created_at}}</p>

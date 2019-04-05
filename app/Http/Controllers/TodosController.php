@@ -18,15 +18,6 @@ class TodosController extends Controller
         return view('todo.index')->with('todos', $todos);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -47,28 +38,6 @@ class TodosController extends Controller
         $todo->save();
 
         return back()->with('success', 'Todo Created!');
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
     }
 
     /**
@@ -101,4 +70,6 @@ class TodosController extends Controller
 
         return back()->with('success', 'Todo Deleted!');
     }
+
+    
 }

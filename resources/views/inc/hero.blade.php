@@ -3,4 +3,5 @@
     <hr>
     <p class="lead">Having trouble remembering what's on your agenda? Say no more fam. Fill out the form below to save your precious brain-space.</p>
     <hr>
+    <p class="lead lobster">You Have {{DB::table('todos')->count()}} Todos.</p>
 </div>
